@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <title>MP3 Player - Index</title>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1040px;
+        }
+    </style>
 </head>
 <body>
-    Index
+    <header>
+        <ul class="h-menu bg-grayMouse fg-white">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle">Products</a>
+                <ul class="d-menu" data-role="dropdown">
+                    <li>
+                        <a href="#" class="dropdown-toggle">Windows</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="#">Windows 10</a></li>
+                            <li><a href="#">Windows Server</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">MS-DOS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Skype</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <section class="mt-20">
+            <div class="row">
+                <div class="cell-sm-12 cell-md-3">
+                    1
+                </div>
+                <div class="cell-sm-12 cell-md-3">
+                    2
+                </div>
+                <div class="cell-sm-12 cell-md-3">
+                    3
+                </div>
+                <div class="cell-sm-12 cell-md-3">
+                    4
+                </div>
+                </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({ autoplayVideos: true });
+    </script>
 </body>
 </html>
