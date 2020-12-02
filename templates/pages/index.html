@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-colors.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">
     <title>MP3 Player - Index</title>
     <style>
+        body {
+            background: #03001e;
+            background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+            background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+        }
+
         .container {
             width: 100%;
-            max-width: 1040px;
+            max-width: 1100px;
+        }
+
+        audio {
+            outline: none;
+        }
+
+        audio:hover,
+        audio:focus,
+        audio:active {
+            -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .card {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            border-radius: 5px;
+            -moz-box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+            -webkit-box-shadow: i-5px 0 5px -5px #333, 5px 0 5px -5px #333;
+            box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
         }
     </style>
 </head>
+
 <body>
     <header>
         <ul class="h-menu bg-grayMouse fg-white">
-            <li><a href="#">Home</a></li>
+            <li><a href="#">MP3 PLAYER</a></li>
             <li>
-                <a href="#" class="dropdown-toggle">Products</a>
+                <a href="#" class="dropdown-toggle">About</a>
                 <ul class="d-menu" data-role="dropdown">
                     <li>
                         <a href="#" class="dropdown-toggle">Windows</a>
@@ -40,27 +76,174 @@
     </header>
     <div class="container">
         <section class="mt-20">
+            <h2 class="ml-2 fg-white">Pop</h2>
+            <hr>
             <div class="row">
-                <div class="cell-sm-12 cell-md-3">
-                    1
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://dinlehome.files.wordpress.com/2020/10/take-you-.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cell-sm-12 cell-md-3">
-                    2
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cell-sm-12 cell-md-3">
-                    3
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cell-sm-12 cell-md-3">
-                    4
-                </div>
-                </div>
+            </div>
         </section>
+        <section class="mt-15">
+            <h2 class="ml-2 fg-white">Rock</h2>
+            <hr>
+            <div class="row">
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-15">
+            <h2 class="ml-2 fg-white">New</h2>
+            <hr>
+            <div class="row">
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-sm-12 cell-md-4">
+                    <div class="card image-header">
+                        <div class="card-header fg-white"
+                            style="height:100%; min-height:400px; background-image: url(http://lorempixel.com/1000/600/)">
+                            <h3>Journey To Mountains</h3>
+                            <p>Journey To Mountains</p>
+                            <div style="margin-top: 5px; width:100%;">
+                                <audio data-role="audio-player"
+                                    data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                    data-show-loop="false" data-show-stop="false" data-show-volume="false"
+                                    data-show-info="false">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-20 text-center fg-white" style="height:50px;line-height:50px;">
+            Student Project | Python Django Course by Regex Software Solutions &copy;
+            <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-        const lightbox = GLightbox({ autoplayVideos: true });
-    </script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 </body>
+
 </html>
